@@ -5,8 +5,11 @@ class CreatePosts < ActiveRecord::Migration[5.2]
       t.integer :list_id
 
       
-      t.integer :entry_type_id
-      t.integer :list_type_id
+      t.integer :post_type_id
+      #still unsure how to use this(list_category) It is supposed to finesse filtering of list post type
+      t.integer :list_category 
+      t.text :content
+
     end
 
   end

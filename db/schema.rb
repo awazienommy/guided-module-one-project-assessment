@@ -14,17 +14,21 @@ ActiveRecord::Schema.define(version: 2019_09_28_015210) do
 
   create_table "lists", force: :cascade do |t|
     t.string "category"
+    t.string "status"
   end
 
   create_table "posts", force: :cascade do |t|
-    t.integer "entry_type_id"
-    t.integer "list_type_id"
     t.integer "user_id"
     t.integer "list_id"
+    t.integer "post_type_id"
+    t.integer "list_category"
+    t.text "content"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
+    t.string "email"
+    t.string "username"
     t.string "password"
   end
 
