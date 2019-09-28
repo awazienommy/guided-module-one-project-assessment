@@ -49,7 +49,19 @@ end
     )
 end
 
+#Framework for creating instances of different kinds of posts
 
+# 2000.times do 
+#     count = 0
+#     if entry_type_id <= 300
+#         create a journal
+#     elsif entry_type_id > 300 && entry_type_id <= 800
+#         create todo
+#     else
+#         create goal
+#     end
+
+# end
 Post.create(user_id: , list_id: , entry_type_id: , list_type_id: )
 Post.create(user_id: , list_id: , entry_type_id: , list_type_id: )
 Post.create(user_id: , list_id: , entry_type_id: , list_type_id: )
