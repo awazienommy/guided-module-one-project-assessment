@@ -62,6 +62,15 @@ end
 #     end
 
 # end
+
+# Post.create(
+# user_id: (make it to reference the user id column/keys in the User table),
+# list_id: (make it to reference the list id column.keys in the List table),
+# entry_type_id:,
+# list_type_id: (make it to reference the category attribute in List table)
+# )
+
+
 Post.create(user_id: , list_id: , entry_type_id: , list_type_id: )
 Post.create(user_id: , list_id: , entry_type_id: , list_type_id: )
 Post.create(user_id: , list_id: , entry_type_id: , list_type_id: )
